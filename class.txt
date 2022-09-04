@@ -1,0 +1,98 @@
+for buttons
+class = "btn btn-info"
+class = "btn btn-danger"
+class = "btn btn-primary"
+class = "btn btn-secondary"
+
+for table
+class="container mt-3">
+<thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+  for images-
+class="rounded-circle"
+class="img-thumbnail"
+
+for alert links
+class="alert alert-success"
+
+for badges
+class="badge bg-secondary"
+
+progress bar
+<div class="progress">
+  <div class="progress-bar" style="width:70%"></div>
+</div>
+
+for spinning ball
+<div class="spinner-border"></div>
+
+for pagination
+<div class="container mt-3">
+  <h2>Pagination - Active State</h2>
+  <p>Add class .active to let the user know which page he/she is on:</p>
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</div>
+
+for list groups
+<ul class="list-group">
+  <li class="list-group-item active">Active item</li>
+  <li class="list-group-item">Second item</li>
+  <li class="list-group-item">Third item</li>
+</ul>
+
+for drop-down menu
+<div class="dropdown">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Link 1</a></li>
+    <li><a class="dropdown-item" href="#">Link 2</a></li>
+    <li><a class="dropdown-item" href="#">Link 3</a></li>
+  </ul>
+</div>
+
+flex
+<div class="container mt-3">
+  <h2>Flex</h2>
+  <p>To create a flexbox container and transform direct children into flex items, use the d-flex class:</p>
+  <div class="d-flex p-3 bg-secondary text-white">  
+    <div class="p-2 bg-info">Flex item 1</div>
+    <div class="p-2 bg-warning">Flex item 2</div>
+    <div class="p-2 bg-primary">Flex item 3</div>
+  </div>
+</div>
+
+footer class
+<footer class="bg-dark text-light py-3">
+    <div class="container">

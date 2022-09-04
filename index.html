@@ -1,39 +1,15 @@
-@import "navigation.css";
 <link rel="stylesheet" href="navigation.css">
 <!-- @import url("navigation.css"); -->
 
 <!DOCTYPE html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width" , initial-scale="1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="navigation.css" rel="stylesheet">
 </head>
-<style>
-  footer {
-    width: 100%;
-    bottom: 0px;
-    background-color: #000;
-    color: #fff;
-    position: relative;
-    padding-top: 20px;
-    padding-bottom: 1px;
-    text-align: left;
-    font-size: 15px;
-    font-weight: bold;
-  }
-
-  .tab {
-    padding: 100px;
-  }
-
-  .demo {
-    /* margin-right: ; */
-    margin-left: auto;
-    margin-right: auto;
-
-  }
-</style>
 
 <body>
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -90,73 +66,29 @@
       </ul>
     </div>
   </nav>
-  <!-- <img src="banner-image.jpg" alt="banner" width="100%" height="400px"> -->
-  <!-- Slideshow container -->
-  <div class="slideshow-container">
-
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="samp2.jpg" style="width:100%">
-      <div class="text">Caption Text</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="workplace.jpg" style="width:100%">
-      <div class="text">Caption Two</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="banner-image.jpg" style="width:100%">
-      <div class="text">Caption Three</div>
-    </div>
-
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
-
-  <!-- The dots/circles -->
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
+  <div class="container-sm">
+  <img src="workplace.jpg" class="img-thumbnail" alt=""></div>
 
   <br>
   <br>
-  <section>
     <button onclick="myFunction()">Click for more information</button>
     <p style="float: right;" id="demo"></p>
-    <script>
-      function myFunction() {
-        document.getElementById("demo").innerHTML = "Hasdfasfd";
-      }
-    </script>
-    <button onclick="myFunction()">Click for more information</button>
-    <p style="float: right;" id="demo"></p>
-    <script>
-      function myFunction() {
-        document.getElementById("demo").innerHTML = "Hasdfasfd";
-      }
-    </script>
-    <button onclick="myFunction()">Click for more information</button>
-    <p align='center' id="demo"></p>
-    <script>
-      function myFunction() {
-        document.getElementById("demo").innerHTML = "Hasdfasfd";
-      }
-    </script>
-  </section>
-  <br>
+
+    <a href="Gallery.html" class="btn btn-info" role="button">Click for Gallery</a>
+    <br>
   <br>
   <br>
   <br>
 
-
+  <div class="container mt-3">
+    <h2>Categrories of photos and videos</h2>
+    <p>To create a flexbox container and transform direct children into flex items, use the d-flex class:</p>
+    <div class="d-flex p-3 bg-secondary text-white">  
+      <div class="p-2 bg-info"><a href="workplace.jpg"> First Category </a></div>
+      <div class="p-2 bg-warning">Second Category</div>
+      <div class="p-2 bg-primary">Third Category</div>
+    </div>
+  </div>
 
 
   <!-- <center><p id="demo"></p> </center> -->
@@ -168,9 +100,64 @@
   <br>
   <br>
 
-  <footer>
-    <p>© 2022 Company Pvt. Ltd. All rights reserved.</p>
+  <footer class="bg-dark text-light py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col12">
+          <h3>Heading1</h3>
+          <ul>
+            <li>List link1</li>
+            <li>List link2</li>
+            <li>List link3</li>
+            <li>List link4</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-12">
+          <h3>Heading2</h3>
+          <ul>
+            <li>List link1</li>
+            <li>List link2</li>
+            <li>List link3</li>
+            <li>List link4</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-12">
+          <h3>Heading3</h3>
+          <ul>
+            <li>List link1</li>
+            <li>List link2</li>
+            <li>List link3</li>
+            <li>List link4</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row pt-3">
+        <div class="col-lg-12 col-md-12 col-12">
+          <div class="copyright text-light">
+            <p class="text-light text-center">© 2022 Company Pvt. Ltd. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+
+      
   </footer>
+  
+  
 
 </body>
+</head>
+
+<head>
+  <script>
+    function myFunction() {
+      alert(
+        "data stored"
+      );
+    }
+  </script>
+  
 </head>

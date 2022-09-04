@@ -1,0 +1,3 @@
+class="rounded"
+class="rounded-circle" -  The .rounded-circle class shapes the image to a circle:
+class="img-thumbnail"
