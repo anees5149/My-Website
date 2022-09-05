@@ -103,17 +103,9 @@ img {vertical-align: middle;}
 .f{
   float:inherit;
 }
-footer {
-  width: 100%;
-  bottom: 0px;
-  background-color: #000;
-  color: #fff;
-  position: relative;
-  padding-top: 20px;
-  padding-bottom: 1px;
-  text-align: left;
-  font-size: 15px;
-  font-weight: bold;
+
+.footer1{
+  text-align: center;
 }
 
 .tab {
@@ -125,4 +117,11 @@ footer {
   margin-left: auto;
   margin-right: auto;
 
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
