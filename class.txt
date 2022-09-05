@@ -96,3 +96,6 @@ flex
 footer class
 <footer class="bg-dark text-light py-3">
     <div class="container">
+
+left marging = 'container ms-2'
+

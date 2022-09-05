@@ -125,3 +125,27 @@ input[type=text] {
   margin: 8px 0;
   box-sizing: border-box;
 }
+.contact {
+  background: url(https://www.gofillform.com/beta/assets/images/back1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px 39px;
+  margin-right: 650px;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.career {
+  background: url(https://www.gofillform.com/beta/assets/images/back.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px 19px;
+  margin-left: 650px;
+  height: 300px;
+  
+}
