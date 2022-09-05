@@ -1,8 +1,51 @@
 <!DOCTYPE html>
+<html>
 <head>
-<body>
-    <h1>Select Image Category</h1>
-    <p> <a href="https://www.pexels.com/search/nature%20wallpaper/" target="_blank">Ocean Images</a></p>
-    <p>Forest</p>
-</body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+</style>
 </head>
+<body>
+
+<h2>Images Side by Side</h2>
+<p>How to create side-by-side images with CSS Flexbox:</p>
+
+<div class="row">
+  <div class="column">
+    <img src="./news images/pexels-element-digital-1370296.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="./news images/pexels-matthis-2305098.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="./news images/pexels-pixabay-159775.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+<br>
+<div class="row">
+    <div class="column">
+      <img src="./news images/pexels-pixabay-207691 (1).jpg" alt="Snow" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="./news images/pexels-pixabay-256490 (3).jpg" alt="Forest" height="68%" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="./news images/pexels-pixabay-289737.jpg" alt="Mountains" height="68%" style="width:100%">
+    </div>
+  </div>
+
+</body>
+</html>
