@@ -126,7 +126,7 @@ input[type=text] {
   box-sizing: border-box;
 }
 .contact {
-  background: url(https://www.gofillform.com/beta/assets/images/back1.jpg);
+  background: url('workplace.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -140,7 +140,7 @@ html, body {
 }
 
 .career {
-  background: url(https://www.gofillform.com/beta/assets/images/back.jpg);
+  background: url('workplace.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
