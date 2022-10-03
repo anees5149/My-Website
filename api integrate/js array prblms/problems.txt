@@ -1,0 +1,143 @@
+1) how to check input is array or not 
+a- var is_array = function(input){
+    if (toString.call(input)== "[object Array]")
+        return true;
+    return false;    
+};
+console.log(is_array('asfd'))
+console.log(is_array([1,2,3,5,6,7]))
+
+
+2) how do you clone an array
+a- let x = [1,2,3, 4,6];
+let y = [5,4,3,21];
+ 
+z = [...y]
+console.log(z)
+
+3) Write a simple JavaScript program to join all elements of the following array into a string.
+a-  myColor = ["Red", "Green", "White", "Black"];
+console.log(myColor.toString());
+console.log(myColor.join());
+
+7) sorting an arrya in ascending order
+a- z.sort(function(a,b){
+    return a-b;
+});
+console.log(z)
+
+4) find max and min in an array
+a- 
+console.log(Math.max(...x));
+
+5) how to find the sum
+a- const arr = [5, 15, 45];
+
+let sum = 0;
+
+for (let index = 0; index < arr.length; index++) {
+  sum += arr[index];
+}
+
+console.log(sum); // 👉️ 65
+
+6) how to find duplicate
+a- let first = [1, 2, 3, 4, 5, 6]
+let second = [3, 4, 5, 6, 7];
+
+let difference = first.filter(x=> second.indexOf(x) === -1);
+console.log(difference);
+
+7) how to add two arrays
+a- const arr1 = ["Cecilie", "Lone"];
+const arr2 = ["Emil", "Tobias", "Linus"];
+const children = arr1.concat(arr2);
+
+8) find the difference of two arrays
+a- let first = [1, 2, 3, 4, 5, 6]
+let second = [3, 4, 5, 6, 7];
+
+let difference = first.filter(x=> second.indexOf(x) === -1);
+console.log(difference);
+
+9) how to remove element from an array
+a- const fruits = ["Banana", "Orange", "Apple", "Mango"];
+delete fruits[0];
+
+10) how to get random no from 0-10
+a- let x = Math.random()*10;
+console.log(x);
+
+11) how to get random item from an array
+a- var items = Array(523, 3452, 334, 31, 5346);
+var item = items[Math.floor(Math.random()*items.length)];
+console.log(item);
+
+12) how to add element in array
+a - 
+x.push('e');
+console.log(x);
+
+13) how to remove duplicate items
+a - let x = ['a', 'b', 'a', 'c', 'c', 'd']
+let y = [...new Set(x)];
+console.log(y);
+
+14) how to find values more than 25
+a- const values = [15, 45, 22, 19, 55, 62, 78];
+
+// find all values > 25
+const greaterThan25 = values.filter(item => {
+    return item > 25;
+});
+console.log(greaterThan25);
+
+15) how to substract two array
+a- const A = [1, 4, 3, 2]
+const B = [0, 2, 1, 2]
+const C = A.map((valueA, indexInA) => valueA - B[indexInA])
+console.log(C) // [1, 2, 2, 0]
+
+16) multiply each element of an array
+a- const arr = [2,2,3,4]
+const pro = arr.reduce((a, b)=> a*b, 1)
+console.log(pro) // 48
+var luckyNumbers = [3, 5, 7, 9];
+for(var i=0; i<luckyNumbers.length; i++) {
+	//Let's take the constant factor as 2
+	luckyNumbers[i] = luckyNumbers[i] * 2;
+}
+console.log(luckyNumbers);
+
+17)join dash
+a-const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let text = fruits.join(" - ");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+var is_array = function(input){
+    if (toString.call(input)== "[object Array]")
+        return true;
+    return false;    
+};
+console.log(is_array('asfd'))
+console.log(is_array([1,2,3,5,6,7]))
