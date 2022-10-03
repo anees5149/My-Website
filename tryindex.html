@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>heading</h1>
+    <input id="id1" type="number" required>
+    <button onclick="myFunction()">OK</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            const inpObj = document.getElementById("id1");
+            if ( inpObj % 2 == 0) {
+                document.getElementById("demo").innerHTML = 'even no';
+            } else {
+                document.getElementById("demo").innerHTML = "odd no";
+            }
+        } 
+    </script>
+
+</body>
+
+</html>
