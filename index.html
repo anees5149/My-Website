@@ -19,7 +19,7 @@
   <title>responsive icder website in bootstrap</title>
   <link rel="icon" type="image/x-icon" href="workplace.jpg">
   <link rel="stylesheet" href="navigation.css">
-  <script src="script.js"></script>
+
 </head>
 <!-- @import url("navigation.css"); -->
 
@@ -67,7 +67,7 @@
           <a href="Images.html" class="btn btn-info" role="button">Click for Gallery</a>
         </li>
         <li>
-          <button  onclick="users()">Details</button>
+          <button onclick="users()">Details</button>
         </li>
 
 
@@ -179,25 +179,25 @@
           </button>
         </div>
         <div class="modal-body">
-          <form action="script.js" method="post">
+          <form id="form" method="post">
             <!-- <div class="form-group">
               <label for="vexampleInputPassword1">Username</label>
               <input type="text" class="form-control" id="vxampleInputPassword1">
             </div> -->
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
+            <div>
+              <label for="email">Email address</label>
               <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+            <div>
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="Password1">
             </div>
             <!-- <div class="form-group">
               <label for="cexampleInputPassword1">confirm password</label>
               <input type="password" class="form-control" id="cexampleInputPassword1">
             </div> -->
-            <button onclick="myfunction()">Signup</button>
+            <input type="submit" value="Signup" />
             <!-- <button type="submit" class="btn btn-primary">Signup</button> -->
           </form>
           <form>
@@ -306,29 +306,59 @@
 
 
 
-
   <br>
   <br>
+  <div id="result"></div>
+  <br>
+  <script>
+    var form = document.getElementById("form")
 
+    form.addEventListener('submit', function (e) {
+      e.preventDefault()
+      var email = document.getElementById('Email1').value
+      var password = document.getElementById('Password1').value
+      fetch('https://reqres.in/api/users', {
+        method: "POST",
+        headers: {
+          "content-type": 'application/json',
+        },
+        body: JSON.stringify({
+          "email": email,
+          "password": password
+        })
+      })
+        .then(function (response) {
+          return response.json()
+        })
+        .then(function (data) {
+          console.log(data)
+          var result = document.getElementById("result")
+          
+        })
+    
+
+      })
+  </script>
   <br>
   <br>
   <br>
   <div>
-    
 
-    <p id="demo"></p>
 
+    <div id="result"></div>
+
+    //
     <script>
-      function users() {
-        // result.innerText = "Loading....";
-        fetch('https://reqres.in/api/users?page=2')
-          .then((res) => res.json())
-          .then((data => console.log(data)))
-          // const myJSON = JSON.stringify(data); 
-          // .then((myJSON => document.getElementById("demo").innerHTML = myJSON));
-          
-      };
-      // document.getElementById("demo").innerText = myJSON;
+    //   function users() {
+    //     // result.innerText = "Loading....";
+    //     fetch('https://reqres.in/api/users?page=2')
+    //       .then((res) => res.json())
+    //       .then((data => console.log(data)))
+    //     // const myJSON = JSON.stringify(data);
+    //     // .then((myJSON => document.getElementById("demo").innerHTML = myJSON));
+
+    //   };
+      //  document.getElementById("demo").innerText = myJSON;
     </script>
   </div>
   <br>
@@ -406,11 +436,11 @@
 
 <head>
   <script>
-    function myFunction() {
-      alert(
-        "data stored"
-      );
-    }
+      function myFunction() {
+        alert(
+          "data stored"
+        );
+      }
   </script>
 
 </head>

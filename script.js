@@ -18,34 +18,28 @@
 // let email = document.getElementById('Email1').value;
 // let password = document.getElementById('Password').value;
 
-// fetch('https://reqres.in/api/users', {
-//     method: "POST",
-//     headers: {
-//         "content-type": 'application/json',
-//     },
-//     body: JSON.stringify({
-//         "email": email,
-//         "password": password
-//     })
-
-// })
-//     .then((res) => {
-//         if (res.ok) {
-//             console.log('http request successful')
-//         }
-//         else {
-//             console.log('http unsuccesfull')
-//         }
-//         return res;
-//     })
-//     .then((res => res.json))
-//     .then((data => console.log(data)))
-//     .catch((error => console.log(error)));
-
-// function users(p1, p2) {
-//     return p1 * p2;
-//   }
-//   document.getElementById("result").innerHTML = users(4, 3);
+fetch('https://reqres.in/api/users', {
+    method: "POST",
+    headers: {
+        "content-type": 'application/json',
+    },
+    body: JSON.stringify({
+        "email": email,
+        "password": password
+    })
+    .then((res) => {
+        if (res.ok) {
+            console.log('http request successful')
+        }
+        else {
+            console.log('http unsuccesfull')
+        }
+        return res;
+    })
+    .then((res => res.json))
+    .then((data => console.log(data)))
+    .catch((error => console.log(error)))
+  });
 
 // function users() {
 //     result.innerText = "Loading....";
