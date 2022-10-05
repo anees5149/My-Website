@@ -1,3 +1,26 @@
+var email1 = document.getElementById("Email1").value
+var password1 = document.getElementById("Password1").value
+function submit(){
+  fetch('https://reqres.in/api/register', {
+    method: 'POST',
+    body: JSON.stringify({
+      email: email1,
+      password: password1
+
+    }),
+    headers: {
+      "Content-type": "text/html; charset=UTF-8"
+  }
+  
+    // Converting to JSON
+    .then(response => response.json())
+
+    // Displaying results to console
+    .then(json => console.log(json))
+    }
+  )}
+  return submit();
+
 // get request
 // fetch ('https://reqres.in/api/users?page=2')
 // .then((res) => {

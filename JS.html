@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id='demo'></p>
+    <button onclick="document.getElementById('demo').innerHTML= Date()">The time is </button>
+    <br>
+    <p id='demo1'></p>
+    <button onclick='myfunction()'>sort alphabetically</button>
+
+
+
+    <script>
+        const alphabets = ['b', 'c', 'a', 'e', 'y'];
+        document.getElementById('demo1').innerHTML = alphabets;
+        function myfunction() {
+            alphabets.sort();
+            document.getElementById('demo1').innerHTML = alphabets;
+        }
+
+    </script>
+
+    <input id ='age' value='' />
+    <button onclick="myfunction()">Try it</button>
+
+    <script>
+        const  hour = new Date().getHours();
+        function myfunction(){
+            
+            let age = document.getElementById('age').value;
+            let voteble = (age<19)? 'too young':'old enough';
+            document.getElementById('demo2').innerHTML = voteble + 'to vote ' + hour
+        }
+    </script>
+    <p id = 'demo2'></p>
+    <script>
+    
+    const  hour1 = new Date().getHours();
+        let greeting;
+        if (hour1<12){
+            greeting = 'good morning'}
+            else if (hour1<20){ greeting = 'good evening'
+
+            }
+            document.getElementById('demo2').innerHTML = greeting;
+        
+
+    </script>
+
+
+</body>
+
+</html>
